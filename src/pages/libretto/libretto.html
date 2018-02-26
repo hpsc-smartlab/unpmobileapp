@@ -1,0 +1,22 @@
+<ion-header class="header" >
+  <ion-title  class="titolo" >Libretto</ion-title>
+  <ion-navbar >
+    <ion-title >
+      Main Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content (ionScroll)="false" >
+<table class="tabella">
+
+  <tr  class="riga" *ngFor="let x of  arrayOfKeys">
+
+    <td class="colonna"  *ngIf=" x >= '0' " >
+      <b>Esame:</b> {{dizf[x].attivita}},{{dizf[x].stato}}, <b>Voto:</b> {{dizf[x].voto}}, <b>Anno di Corso:</b> {{dizf[x].anno_di_corso}}
+    </td>
+
+  </tr>
+
+</table>
+</ion-content>

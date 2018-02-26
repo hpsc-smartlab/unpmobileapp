@@ -1,0 +1,34 @@
+<ion-header class="header">
+  <ion-title class="titolo">Visualizza Pannello</ion-title>
+  <ion-navbar >
+    <ion-title >
+      Main Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content (ionScroll)="false">
+    <table class="tabella">
+
+        <tr class="riga" *ngFor="let x of  arrayOfKeys">
+
+          <td *ngIf=" x == 'Appelli disponibili' " >
+            <b>{{x}}: </b> {{dizf[x]}}
+          </td>
+
+          <td *ngIf=" x == 'Iscrizioni appelli' ">
+            <b>{{x}}: </b>{{dizf[x]}}
+          </td>
+
+          <td *ngIf=" x == 'Piano carriera' ">
+            <b>{{x}}: </b> {{dizf[x]}}
+          </td>
+
+          <td *ngIf=" x == 'Tasse' ">
+            <b>{{x}}: </b> {{dizf[x]}}
+          </td>
+
+        </tr>
+
+    </table>
+</ion-content>

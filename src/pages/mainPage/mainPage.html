@@ -1,0 +1,49 @@
+<ion-header class="header"  >
+  <ion-title class="titolo">Main Page</ion-title>
+</ion-header>
+
+<ion-content (ionScroll)="false">
+<ion-grid class="griglia" >
+
+  <ion-row class="riga">
+
+    <ion-col class="colonna" >
+      <img class="immagine" src="/android_asset/www/assets/img/computer.png"  (click)="pannello()">
+      <h4 class="sub-img">Pannello di Controllo</h4>
+    </ion-col>
+
+    <ion-col class="colonna">
+      <img class="immagine" src="/android_asset/www/assets/img/occhiali.png" (click)="piano_di_studi()">
+      <h4 class="sub-img">Piano di Studi</h4>
+    </ion-col>
+
+    <ion-col class="colonna" >
+      <img class="immagine" src="/android_asset/www/assets/img/lista.png" (click)="riepilogo_esami()">
+      <h4 class="sub-img">Riepilogo Esami</h4>
+    </ion-col>
+
+  </ion-row>
+
+
+
+  <ion-row class="riga">
+
+    <ion-col class="colonna">
+      <img class="immagine" src="/android_asset/www/assets/img/pollicione.png" (click)="pagamenti()">
+      <h4 class="sub-img">Pagamenti</h4>
+    </ion-col>
+
+    <ion-col class="colonna">
+      <img class="immagine" src="/android_asset/www/assets/img/rubrica.png" (click)="libretto()">
+      <h4 class="sub-img">Libretto</h4>
+    </ion-col>
+
+    <ion-col class="colonna">
+    </ion-col>
+
+  </ion-row>
+
+
+</ion-grid>
+</ion-content>
+
